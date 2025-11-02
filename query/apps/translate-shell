@@ -1,0 +1,35 @@
+Uso básico:
+
+   * Traducir una palabra o frase: trans "Hello, World!" (detecta automáticamente el idioma de entrada y traduce al 
+     idioma de tu sistema).
+   * Traducción breve: trans -brief "Hello, World!"
+   * Traducir a un idioma específico (ej. francés): trans :fr word
+   * Traducir de un idioma a otro (ej. alemán a inglés): trans de:en Schmetterling
+   * Modo interactivo: trans -shell (escribe línea por línea y traduce al instante; para salir, escribe :q).
+   * Traducir a varios idiomas: trans "Hello" :es+fr
+
+Sí, puedes instalar translate-shell tanto en macOS como en Windows.
+
+  En macOS:
+
+  Puedes instalarlo fácilmente usando Homebrew, que es un gestor de paquetes popular para macOS:
+
+   1. Instalar Homebrew (si no lo tienes ya):
+      Abre la terminal y ejecuta:
+
+   1     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   2. Instalar `translate-shell` con Homebrew:
+      Una vez que Homebrew esté instalado, ejecuta:
+   1     brew install translate-shell
+
+  En Windows:
+
+  En Windows, translate-shell no se ejecuta de forma nativa, pero puedes usarlo a través de:
+
+   * Windows Subsystem for Linux (WSL): Es la forma más recomendada. Instalas una distribución de Linux (como Ubuntu) 
+     dentro de Windows, y luego sigues los pasos de instalación para Linux (usando sudo apt-get install 
+     translate-shell dentro de tu terminal WSL).
+   * Cygwin o MSYS2: Son entornos que proporcionan una capa de compatibilidad tipo Unix en Windows, donde también 
+     podrías instalar translate-shell siguiendo sus propias instrucciones de paquetes o compilando desde la fuente.
+
+  Para ambos sistemas, una vez instalado, el uso es el mismo que te mencioné anteriormente con el comando trans.
