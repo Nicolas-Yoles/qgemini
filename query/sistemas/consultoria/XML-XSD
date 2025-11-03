@@ -1,0 +1,27 @@
+La arquitectura de XML (Lenguaje de Marcado Extensible) y XSD (Definición de Esquema XML) se basa en la estructuración, el almacenamiento, el transporte y la validación de datos. Ambos son estándares del World Wide Web Consortium (W3C) que funcionan en conjunto para facilitar el intercambio de información de manera consistente y robusta.
+
+### Arquitectura XML
+
+**XML** es un lenguaje de marcado diseñado para almacenar y transportar datos, no para mostrarlos. Su arquitectura se centra en la extensibilidad, lo que significa que puedes definir tus propias etiquetas para describir la estructura de los datos, a diferencia de HTML, que tiene etiquetas predefinidas.
+
+Los componentes clave de un documento XML son:
+
+*   **Declaración XML:** Indica la versión de XML y la codificación utilizada.
+*   **Elementos:** Son las unidades básicas que representan los datos, definidas con etiquetas de apertura y cierre (p. ej., `<libro>...</libro>`).
+*   **Atributos:** Proporcionan información adicional sobre un elemento y se definen dentro de la etiqueta de apertura (p. ej., `<libro id="123">`).
+*   **Contenido:** Es el valor que se encuentra entre las etiquetas de apertura y cierre de un elemento.
+
+### Arquitectura XSD
+
+**XSD (XML Schema Definition)** es un lenguaje de esquema que se utiliza para definir la estructura y las restricciones de un documento XML. Actúa como una plantilla o un contrato que especifica cómo debe organizarse un XML, qué elementos y atributos puede contener, sus tipos de datos y su jerarquía.
+
+Las ventajas y características de XSD incluyen:
+
+*   **Validación:** Permite validar documentos XML para garantizar que cumplan con una estructura y unas reglas definidas, asegurando la consistencia e integridad de los datos.
+*   **Tipos de datos:** A diferencia de los antiguos DTD (Document Type Definition), XSD admite la verificación de tipos de datos (como enteros, fechas, cadenas), lo que permite definir restricciones más potentes.
+*   **Restricciones:** Permite definir restricciones como valores mínimos y máximos, patrones para cadenas y la cardinalidad (cuántas veces puede aparecer un elemento).
+*   **Basado en XML:** Un XSD es en sí mismo un documento XML, lo que facilita su procesamiento con herramientas XML estándar.
+
+### Relación entre XML y XSD
+
+La relación entre XML y XSD es fundamental para un intercambio de datos robusto. Un documento XML contiene los datos, mientras que un documento XSD define las reglas que ese XML debe seguir. Un documento XML puede vincularse a un esquema XSD para que las aplicaciones puedan validar que el XML cumple con la estructura y las reglas definidas en el XSD, lo cual es crucial para la interoperabilidad entre sistemas.
