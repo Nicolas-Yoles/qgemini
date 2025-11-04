@@ -1,0 +1,20 @@
+ En robótica, una matriz de transformación es una herramienta matemática que se usa para describir
+  la posición y orientación de un objeto en un espacio 3D con respecto a un punto de referencia.
+
+  Generalmente, se utilizan matrices de transformación homogéneas (matrices de 4x4) que combinan
+  tanto la rotación como la traslación en una sola matriz.
+
+  La estructura es la siguiente:
+
+   1 [ R | t ]
+   2 [---|---]
+   3 [ 0 | 1 ]
+
+  Donde:
+   * R: Es una submatriz de 3x3 que describe la rotación.
+   * t: Es un vector de 3x1 que describe la traslación (la posición).
+
+  Estas matrices son fundamentales en robótica para:
+   * Cinemática: Calcular la posición del efector final del robot.
+   * Planificación de trayectorias: Planificar los movimientos del robot.
+   * Control: Guiar el movimiento del robot con precisión.
